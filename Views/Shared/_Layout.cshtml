@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @await Html.PartialAsync("MetatagsPartial")
+    @await Html.PartialAsync("CssPartial")
+
+</head>
+<body class="d-flex flex-column h-100">
+
+
+    <main class="flex-shrink-0">
+        @await Html.PartialAsync("HeaderPartial")
+        @RenderBody()
+    </main>
+
+    @await Html.PartialAsync("FooterPartial")
+    @await Html.PartialAsync("ScriptsPartial")
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

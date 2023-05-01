@@ -1,0 +1,13 @@
+﻿<div class="register-photo">
+    <div class="form-container">
+        <div class="image-holder"></div>
+        <form method="post" action="/Account/Welcome">
+            <h2 class="text-center"><strong>Create</strong> an account.</h2>
+            <div class="form-group pt-2 pb-2"><input class="form-control" type="text" name="fname" placeholder="Fisrt name"></div>
+            <div class="form-group pt-2 pb-2"><input class="form-control" type="text" name="lname" placeholder="Last name"></div>
+            <div class="form-group pt-2 pb-2"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+
+            <div class="form-group register-submit"><button  asp-controller="Account" asp-action="Welcome"  class="btn btn-primary btn-block" type="submit">Become developer!</button></div><a href="#" class="already">You already have an account? Login here.</a>
+        </form>
+    </div>
+</div>
